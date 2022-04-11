@@ -69,7 +69,7 @@ impl Display for ParseClimateError {
         use ParseClimateError::*;
         match self {
             Empty => write!(f, "empty input"),
-            BadLen => write!(f, "bad length"),
+            BadLen => write!(f, "incorrect number of fields"),
             NoCity => write!(f, "no city name"),
             ParseFloat(e) => write!(f, "error parsing temperature: {}", e),
             ParseInt(e) => write!(f, "error parsing year: {}", e),

@@ -14,8 +14,6 @@ mod my_macros {
     }
 }
 
-// I AM NOT DONE
-
 #[cfg(test)]
 mod tests {
     use super::*;
